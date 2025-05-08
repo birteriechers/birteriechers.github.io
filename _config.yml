@@ -22,10 +22,10 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "br5.jpg" # "profile.png" # images/br5.jpg # images/BirteRiechers_5.jpg # 
+  avatar           : "BirteRiechers_5.jpg" # "profile.png" # images/br5.jpg # images/BirteRiechers_5.jpg # 
   name             : "Birte Riechers"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "" # "Short biography for the left-hand sidebar"
   location         : "Unter den Eichen 87, D-12205 Berlin"
   employer         : "BAM"
   uri              : # URL
