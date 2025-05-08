@@ -13,6 +13,11 @@ layout: compress
 
   <body>
 
+    {% if site.avatar %}
+      <img src="{{ site.avatar | relative_url }}" alt="Avatar" class="avatar" style="max-width:150px; border-radius: 50%;">
+    {% endif %}
+
+    
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
