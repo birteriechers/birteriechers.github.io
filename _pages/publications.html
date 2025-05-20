@@ -5,32 +5,48 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<h2>Google Scholar</h2>
+<div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+  <!-- Webpage-Icon -->
+  <div style="font-size: 1.0rem; color: #444;">
+    <i class="fa-solid fa-globe"></i>
+  </div>    
+  <!-- Textbereich -->
+  <div>
+    <div>
+      <a href="https://scholar.google.com/citations?user=79npyUIAAAAJ&hl=de&oi=ao" target="_blank" style="text-decoration: none;">
+        https://scholar.google.com/citations?user=79npyUIAAAAJ&hl=de&oi=ao
+      </a>
+    </div>
+  </div>
+</div>
 
-{% include base_path %}
+<h2>ORCID Profile ID</h2>
+<div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+  <!-- Webpage-Icon -->
+  <div style="font-size: 1.0rem; color: #444;">
+    <i class="fa-solid fa-globe"></i>
+  </div>    
+  <!-- Textbereich -->
+  <div>
+    <div>
+      <a href="https://orcid.org/0000-0003-4437-9844" target="_blank" style="text-decoration: none;">
+        https://orcid.org/0000-0003-4437-9844
+      </a>
+    </div>
+  </div>
+</div>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<p>
+  2.  *Emergent interparticle interactions in thermal amorphous solids*
+      O. Gendelman, E. Lerner, Y. G. Pollack, I. Procaccia, C. Rainone, B. Riechers, Phys. Rev. E 94, 5:051001 (2016)
+</p>
+
+<p>
+  1.  *Structural recovery in plastic crystals by time-resolved non-linear dielectric spectroscopy*
+      B. Riechers, K. Samwer, R. Richert, J. Chem. Phys. 142, 154504 (2015)
+</p>
+
 
 
 
