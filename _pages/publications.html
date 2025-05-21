@@ -4,24 +4,26 @@ title: ""
 permalink: /publications/
 author_profile: true
 ---
+
 <style>
   .bib-entry {
-    display: flex;
     margin-bottom: 1.2em;
   }
 
   .bib-number {
-    width: 2em; /* Platz für Nummer */
-    flex-shrink: 0;
+    display: inline-block;
+    width: 2.5em; /* Reserviert Platz für Nummerierung */
+    vertical-align: top;
   }
 
-  .bib-content {
-    flex: 1;
+  .bib-block {
+    display: inline-block;
+    max-width: 90%;
   }
 
   .bib-title {
-    text-indent: 1em; /* Abstand vom Nummernblock */
     margin: 0;
+    text-indent: 1em; /* Nur der Titel wird eingerückt */
   }
 
   .bib-title a {
@@ -70,12 +72,12 @@ author_profile: true
 <h2>Publications</h2>
 
 <div class="bib-entry">
-  <div class="bib-number">19.</div>
-  <div class="bib-content">
+  <span class="bib-number">19.</span>
+  <div class="bib-block">
     <p class="bib-title"><i><a href="https://doi.org/10.1016/j.scriptamat.2024.116380" target="_blank">Annealing-dependent elastic microstructure in a Zr-based metallic glass</a></i></p>
+    <p class="bib-authors">R. Rashidi, B. Riechers, J. M. Rosalie, R. Maaß</p>
+    <p class="bib-journal"><i>Scripta Materialia</i> 225, 116380 (2025)</p>
   </div>
-  <p class="bib-authors">R. Rashidi, B. Riechers, J. M. Rosalie, R. Maaß</p>
-  <p class="bib-journal"><i>Scripta Materialia</i> 225, 116380 (2025)</p>
 </div>
 
 <div class="bib-entry">
