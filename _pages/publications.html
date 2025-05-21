@@ -6,28 +6,32 @@ author_profile: true
 ---
 <style>
   .bib-entry {
+    display: flex;
     margin-bottom: 1.2em;
   }
 
-  .bib-wrapper {
-    position: relative;
+  .bib-number {
+    width: 2em; /* Platz für Nummer */
+    flex-shrink: 0;
   }
 
-  .bib-number {
-    position: absolute;
-    width: 2.5em;
-    text-align: right;
-    left: 0;
-    top: 0;
+  .bib-content {
+    flex: 1;
   }
 
   .bib-title {
-    text-indent: 2.5em;
+    text-indent: 1em; /* Abstand vom Nummernblock */
+    margin: 0;
   }
 
   .bib-title a {
     text-decoration: none;
     color: inherit;
+  }
+
+  .bib-authors,
+  .bib-journal {
+    margin: 0;
   }
 </style>
 
